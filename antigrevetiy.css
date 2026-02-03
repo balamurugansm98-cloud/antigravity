@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.antigravity-box {
+    width: 150px;
+    height: 150px;
+    background-color: #3186FF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Apply the animation */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Define the floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px); /* Moves up 20px */
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
